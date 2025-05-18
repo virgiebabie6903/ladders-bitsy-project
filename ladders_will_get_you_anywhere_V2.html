@@ -11,10 +11,10 @@
 <script type="text/bitsyGameData" id="exportedGameData">
 Ladders Will Get You Anywhere{pg}Enter the movie theater!
 
-# BITSY VERSION 8.13
+# BITSY VERSION 8.14
 
 ! VER_MAJ 8
-! VER_MIN 13
+! VER_MIN 14
 ! ROOM_FORMAT 1
 ! DLG_COMPAT 0
 ! TXT_MODE 0
@@ -45,6 +45,7 @@ w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w
 NAME outside theater
 ITM 0 3,11
 EXT 10,6 1 8,13 FX fade_b DLG 4
+EXT 2,13 8 0,0 FX fade_b DLG e
 PAL 0
 TUNE 2
 
@@ -91,9 +92,9 @@ z,16,z,0,0,z,0,0,0,0,0,0,0,0,0,z
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME rightside
 ITM 2 9,5
-ITM 2 13,5
 ITM 2 9,11
 ITM 2 13,11
+ITM 2 13,5
 EXT 15,8 4 0,8 FX slide_r
 EXT 1,9 1 12,2 FX fade_b
 PAL 0
@@ -103,8 +104,8 @@ ROOM 4
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,1h,0,0,0,1g,0,0,0,1f,0,0,0,0,0,0
-10,15,y,y,y,15,y,y,y,15,y,y,y,11,0,0
+0,1h,0,0,0,1g,0,0,0,1f,0,24,0,0,0,0
+10,15,y,y,y,15,y,y,y,15,y,0,y,11,0,0
 z,0,0,0,0,0,0,0,0,0,0,0,0,z,0,0
 13,0,0,0,0,0,0,0,0,0,0,0,0,z,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,0
@@ -120,9 +121,10 @@ ITM 2 1,5
 ITM 2 1,11
 ITM 2 5,11
 ITM 2 5,5
-ITM 2 9,5
 ITM 2 9,11
 EXT 0,8 2 15,8 FX slide_l
+EXT 9,5 9 2,13 FX fade_b
+EXT 11,5 9 15,14 FX fade_b DLG d
 PAL 0
 
 ROOM 5
@@ -217,6 +219,51 @@ ROOM 8
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME end screen
+PAL 0
+
+ROOM 9
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16
+0,10,y,y,1y,y,y,y,y,y,y,y,y,y,11,0
+0,z,0,0,z,0,0,0,0,0,0,0,0,0,z,0
+0,z,0,0,z,0,0,0,0,0,0,0,0,0,z,0
+0,z,0,0,z,0,0,0,0,0,0,0,0,0,z,0
+0,1v,y,y,1x,y,y,y,y,y,y,y,y,y,1w,0
+0,z,0,0,0,0,0,0,0,0,0,0,0,0,z,0
+0,z,0,0,0,0,0,0,0,0,0,0,0,0,z,0
+0,z,0,z,1z,1u,1u,1u,1u,1u,1u,1u,1u,1u,z,0
+0,z,0,z,1z,1u,1u,1u,1u,1u,1u,1u,1u,1u,z,0
+0,z,0,z,1z,1u,1u,1u,1u,1u,1u,1u,1u,1u,z,0
+0,z,0,z,1z,1u,1u,1u,1u,1u,1u,1u,1u,1u,z,0
+0,z,0,z,1z,1u,1u,1u,1u,1u,1u,1u,1u,1u,z,0
+0,z,16,1v,y,y,y,y,y,y,y,y,y,y,13,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16
+NAME theater 6
+EXT 2,13 4 9,5 FX fade_b
+EXT 15,14 4 11,5 FX fade_b
+EXT 15,2 a 14,14 FX fade_b
+PAL 0
+
+ROOM a
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,10,y,y,y,y,y,y,y,11,0,0,0
+0,0,0,0,z,0,0,0,0,0,0,0,12,y,y,11
+0,0,0,0,z,0,0,10,y,11,0,0,0,0,0,z
+0,0,0,0,z,0,0,12,y,13,0,0,10,11,0,z
+0,0,0,0,z,0,0,0,0,0,0,0,z,z,0,z
+0,0,0,0,12,y,y,y,y,y,y,y,13,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,0,z
+0,0,0,0,0,0,0,0,0,0,0,0,0,z,16,z
+NAME rat society
+ITM 4 12,6
+EXT 14,14 9 15,2 FX fade_b
 PAL 0
 
 TIL 10
@@ -389,6 +436,18 @@ TIL 23
 10010101
 11110111
 NAME man2
+
+TIL 24
+00000000
+11111111
+10000001
+11111111
+10000001
+11111111
+10000001
+11111111
+NAME vent
+WAL true
 
 TIL a
 00000000
@@ -1040,7 +1099,7 @@ SPR b
 01111110
 NAME trashcan
 DLG 5
-POS 4 7,6
+POS 2 11,10
 
 SPR c
 00011100
@@ -1063,6 +1122,91 @@ SPR c
 NAME snackguy
 DLG 6
 POS 1 8,5
+
+SPR d
+00111000
+00011000
+00111000
+00010100
+00111010
+00011110
+00101000
+01101100
+>
+00000000
+00111000
+00011000
+00111000
+00010110
+00111010
+01000100
+01101100
+NAME moviegoer
+DLG a
+POS 9 10,11
+
+SPR e
+00000000
+00000000
+01100000
+10000000
+10011010
+11011100
+11101011
+11111110
+>
+00000000
+01000000
+01000000
+01000000
+11011010
+11011100
+11101010
+11111111
+NAME rat1
+POS a 6,6
+
+SPR f
+00000000
+00000000
+01100000
+10000000
+10011010
+11011100
+11101011
+11111110
+>
+00000000
+01000000
+01000000
+01000000
+11011010
+11011100
+11101010
+11111111
+NAME rat2
+POS a 7,8
+
+SPR g
+00000000
+00000000
+00000110
+00000001
+01011001
+00111011
+11010111
+01111111
+>
+00000000
+00000010
+00000010
+00000010
+01011011
+00111011
+01010111
+11111111
+NAME rat3
+POS a 10,7
 
 ITM 0
 00000000
@@ -1113,13 +1257,25 @@ ITM 3
 NAME endtrigger
 DLG 9
 
+ITM 4
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME endtrigger 2
+DLG c
+
 DLG 0
 Sorry, pal. I can't let you in unless you've bought a ticket.
 NAME cat dialog
 
 DLG 1
-Oh sweet, a ladder! You can get just about anywhere with this
-NAME tea dialog
+Oh sweet, a ladder! You can get just about anywhere with this{ladder_got = 1}
+NAME ladder dialog
 
 DLG 2
 A key! {wvy}What does it open?{wvy}
@@ -1159,7 +1315,14 @@ DLG 5
 NAME trashcan dialog
 
 DLG 6
-Oh hey, a ladder. You must be here to fix something.{pg}I've been hearing a ton of commotion all the way from theater 13 all day... Is that what you're here for?
+"""
+{
+  - {item "0"} == 1 ?
+    Oh hey, a ladder. You must be here to fix something.{pg}I've been hearing a ton of commotion all the way from theater 13 all day... Is that what you're here for?
+  - else ?
+    Hey, didn't I just see you with a ladder a minute ago?{pg}...{pg}... Sorry, dunno why I felt like asking. Doesn't affect me at all, so... yeah.
+}
+"""
 NAME snackguy dialog
 
 DLG 7
@@ -1182,8 +1345,41 @@ DLG 9
 {shk}CHICKEN JOCKEY!!{/shk}{pg}The crowd erupts in thunderous applause. You turn to escape, but it's already too late.{pg}{exit "8" 7 15 "fade_b"}{end}Popcorn floods the theater. People are screaming. Chaos breaks loose.{pg}There were no survivors.
 NAME endtrigger dialog
 
-VAR a
-42
+DLG a
+I just got done watching that new horror movie "Theater Rat Society", and boy did it stink!{pg}I mean, man, do they really expect me to be scared of such crusty CGI rats?{pg}And how unrealistic that rats would be running a movie theater as their main base of operations for overthrowing the United States government under the guise of a stupid B-movie?{pg}All it took for the main guy to find them out was hearing them through a vent and climbing in.{pg}Absolutely no subtlety with their storytelling, just telling the watchers exactly what's going to happen in the most uncreative way possible.
+NAME moviegoer dialog
+
+DLG c
+...and that's why we, as the rat council, shall keep doing the exact same thing we've been doing for as long as we've existed.{pg}Hey, a human!! We can't let our secret get out. {shk}GET HIM!!!{/shk}{pg}{exit "8" 7 15 "fade_b"}{end}A battle ensues between you and the rats, which you promptly win the moment you remember that they are, in fact, merely rats.{pg}You try to tell the news about the rat council you discovered after climbing through a loose vent in a movie theater with a ladder that you used to get free admission, but no station believes you.{pg}You then go on to become a very successful yet morally bankrupt conspiracy theorist grifter on the internet.
+NAME rat council ending
+
+DLG d
+"""
+{
+  - {item "0"} == 1 ?
+    You prop your ladder up on the wall to enter the vent.{item "0" {{item "0"} - 1}}
+}
+"""
+NAME use ladder
+
+DLG e
+"""
+{
+  - ladder_got == 1 ?
+    {
+      - {item "0"} == 1 ?
+        {property locked true}
+      - else ?
+        {property locked false}You left your ladder inside, and they won't let you back in.{pg}{exit "8" 0 0 "fade_b"}{end}You go home, with no money, no ladder, and no movie.{pg}Maybe next time, do something with that ladder before leaving so soon.
+    }
+  - else ?
+    {property locked true}
+}
+"""
+NAME locked out ladder
+
+VAR ladder_got
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
@@ -1305,6 +1501,7 @@ body {
 }
 
 #game {
+	image-rendering:pixelated;
 	background:black;
 	width:100vw;
 	max-width:100vh;
@@ -2635,7 +2832,7 @@ var bitsy = mainProcess.system;
 // is this the right place for this to live?
 var version = {
 	major: 8, // major changes
-	minor: 13, // smaller changes
+	minor: 14, // smaller changes
 	devBuildPhase: "RELEASE",
 };
 function getEngineVersion() {

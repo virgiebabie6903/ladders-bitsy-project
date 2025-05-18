@@ -1,0 +1,17 @@
+Game Project: Ladders Will Get You Anywhere
+Creator: Virgil West
+Version: 2.0
+Date: May 18th, 2025
+
+New Features:
+- Two new endings
+- A new enterable theater with a new NPC inside
+
+Fixes:
+- N/A
+
+Improvements (of existing features):
+- Existing NPCs have new dialogue that changes with your inventory
+
+Known bugs:
+- Visual bug when trying to fade to end screen; no known workaround at the moment.
